@@ -7,11 +7,60 @@ body {
 
 h1 {
   color: #333;
+  width: 100%;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: bold;
 }
-#result .green {
-  color: #2ecc71;
+p{
+  width: 100%;
+  text-align: center;
+}
+input{
+  margin-left: 49%;
+  margin-bottom: 3%;
+}
+#countdown, #result{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+#countdown span{
+  color:#e74c3c
 }
 
-#result .red {
+.ganas {
+  color: #2ecc71;
+  font-size: 3.5vw;
+  font-weight: bold;
+  animation: mover 1s;
+  transition: all 1s;
+}
+.pierdes{
   color: #e74c3c;
+  font-size: 3.5vw;
+  font-weight: bold;
+  animation: mover 1s ;
+  transition: all 1s;
+
+} 
+#result{
+  font-size: 1.5vw;
+}
+
+#restart{
+  cursor: pointer;
+  margin-left: 47%!important;
+  background-color: skyblue;
+  color: darkblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+@keyframes mover {
+  0%{transform: translateX(100%);  }
+  100%{transform: translateX(0%);}
 }
