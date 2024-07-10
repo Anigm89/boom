@@ -4,9 +4,6 @@ const resultado = document.getElementById('result');
 const reiniciar = document.getElementById('restart');
 
 let aleatorio =  Math.floor(Math.random() * (3 - 1 + 1)) + 1;
-    console.log('aleatorio', aleatorio)
-
-
 let tiempoTotal = 5;
 
 function Actualizareloj() {
@@ -16,7 +13,7 @@ time.innerHTML = `&#9203; Cuenta atrás: ${tiempoTotal} segundos`;
         time.innerHTML= `<span>Cuenta atrás: ${tiempoTotal} segundos</span>`
         
         //comparar resultados
-        let elegido = numero.value;      console.log('elegido',elegido)
+        let elegido = numero.value;      
         if(elegido == aleatorio){
             const result =`<div class="ganas"> &#127870;
             Enhorabuena, has salvado el mundo! &#127942;  </div><br>
@@ -37,11 +34,9 @@ time.innerHTML = `&#9203; Cuenta atrás: ${tiempoTotal} segundos`;
     }
 }
 
-numero.addEventListener("keyup", () => {
    
     Actualizareloj();
 
-});
 
 //reiniciar
 reiniciar.addEventListener('click', () =>{
